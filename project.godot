@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="collect-the-coins"
+run/main_scene="uid://brhp20t5bvj3e"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+
+[autoload]
+
+GameManager="*uid://bn1aia6me8kiq"
+
+[display]
+
+window/size/viewport_width=1300
+window/size/viewport_height=800
+
+[input]
+
+replay={
+"deadzone": 0.2,
+"events": []
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.22352941, 0.4509804, 0.61960787, 1)
