@@ -43,8 +43,7 @@ func reset():
 
 	$player.reset()
 
-	for coin in $coins.get_children():
-		coin.reset()
+	$world.reset()
 
 	GameManager.replay()
 
