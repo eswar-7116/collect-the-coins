@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bmnwwrc7yocma" path="res://player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://7npccd6gu2cj" path="res://assets/images/knight.png" id="2_i3pqv"]
 [ext_resource type="AudioStream" uid="uid://dipnw1uqgodcc" path="res://assets/audio/jump.ogg" id="3_g1dw6"]
+[ext_resource type="AudioStream" uid="uid://dx0v4fqjgqr5w" path="res://assets/audio/hurt.ogg" id="4_yw30f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h2yge"]
 atlas = ExtResource("2_i3pqv")
@@ -175,8 +176,12 @@ shape = SubResource("RectangleShape2D_0xm2m")
 zoom = Vector2(2.25, 2.25)
 limit_bottom = 800
 limit_smoothed = true
+position_smoothing_enabled = true
 metadata/_edit_lock_ = true
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1955197034]
+[node name="jump" type="AudioStreamPlayer2D" parent="." unique_id=1955197034]
 stream = ExtResource("3_g1dw6")
 volume_db = -10.0
+
+[node name="death" type="AudioStreamPlayer2D" parent="." unique_id=2134977942]
+stream = ExtResource("4_yw30f")
