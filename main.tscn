@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://brhp20t5bvj3e"]
 
 [ext_resource type="Script" uid="uid://be62sdhawydm1" path="res://main.gd" id="1_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://d3ihllpqgr32i" path="res://world.tscn" id="2_7mycd"]
+[ext_resource type="PackedScene" uid="uid://d3ihllpqgr32i" path="res://world/world.tscn" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bhafipaeltx17" path="res://player/player.tscn" id="3_h2yge"]
 [ext_resource type="FontFile" uid="uid://decnsowmdm3r3" path="res://assets/PixelOperator8.ttf" id="5_lquwl"]
 [ext_resource type="AudioStream" uid="uid://dpl1c2q40iae1" path="res://assets/audio/time_for_adventure.ogg" id="6_7mycd"]

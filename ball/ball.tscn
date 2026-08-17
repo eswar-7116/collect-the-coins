@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dqqxfygqm1lpf"]
+
+[ext_resource type="Texture2D" uid="uid://cwcn8wx6dx7i1" path="res://assets/images/goodly.png" id="1_6plaf"]
+[ext_resource type="Script" uid="uid://cq1067x50vr5j" path="res://ball/ball.gd" id="1_pwunn"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tlwt5"]
+bounce = 0.5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlwt5"]
+atlas = ExtResource("1_6plaf")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aqk2v"]
+radius = 8.0
+
+[node name="ball" type="RigidBody2D" unique_id=762529000]
+physics_material_override = SubResource("PhysicsMaterial_tlwt5")
+script = ExtResource("1_pwunn")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1618932890]
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_tlwt5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=566730888]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_aqk2v")
